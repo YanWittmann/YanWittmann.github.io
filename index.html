@@ -2,10 +2,160 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yan Wittmann</title>
+    <meta name="description" content="Personal site of Yan Wittmann. Find my projects, blog, and more at yanwittmann.de.">
+    <meta name="author" content="Yan Wittmann">
+    <meta name="robots" content="index, follow">
     <meta name="google-site-verification" content="a7U22jZ4G4iP3B_Ukped9W1814rnDme2P5MWF2OOCyk"/>
+    <link rel="canonical" href="https://yanwittmann.github.io/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=JetBrains+Mono:wght@700&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --accent: #b61c52;
+            --text-main: #2f2f2f;
+            --text-muted: #777;
+            --font-body: 'Inter', sans-serif;
+            --font-mono: 'JetBrains Mono', monospace;
+            --font-head: 'Roboto Slab', serif;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: var(--font-body);
+            background: #f8f9fa;
+            background-image: radial-gradient(#d1d1d1 1.5px, transparent 1.5px);
+            background-size: 24px 24px;
+            color: var(--text-main);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+        .container {
+            background: #fff;
+            border: 1px solid var(--text-main);
+            max-width: 560px;
+            width: 100%;
+            box-shadow: 6px 6px 0 var(--text-muted);
+        }
+        .card-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 15px;
+            border-bottom: 1px solid var(--text-main);
+            background: #fff;
+        }
+        .card-square {
+            width: 10px;
+            height: 10px;
+            background: var(--accent);
+            flex-shrink: 0;
+        }
+        .card-header h1 {
+            font-family: var(--font-head);
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--text-main);
+        }
+        .card-header .label {
+            margin-left: auto;
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: var(--accent);
+        }
+        .card-header .label a { color: var(--accent); }
+        .card-header .label a:hover { text-decoration: underline; }
+        .card-body {
+            padding: 20px 24px;
+        }
+        .divider {
+            border: none;
+            border-top: 1px solid #e5e5e5;
+            margin-bottom: 20px;
+        }
+        .section-title {
+            font-family: var(--font-mono);
+            font-size: 0.7rem;
+            font-weight: 700;
+            color: var(--text-muted);
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+        ul {
+            list-style: none;
+            margin-bottom: 24px;
+        }
+        ul li {
+            margin-bottom: 5px;
+            font-size: 0.9rem;
+        }
+        ul li::before {
+            content: '→ ';
+            color: var(--accent);
+            font-family: var(--font-mono);
+            font-size: 0.8rem;
+        }
+        a {
+            color: var(--text-main);
+            text-decoration: none;
+        }
+        a:hover { color: var(--accent); }
+        .note {
+            font-size: 0.75rem;
+            color: #bbb;
+            font-family: var(--font-mono);
+        }
+    </style>
 </head>
 <body>
-<h1>Welcome to my site!</h1>
+<main class="container">
+    <div class="card-header">
+        <span class="card-square"></span>
+        <h1>Yan Wittmann</h1>
+        <span class="label"><a href="https://yanwittmann.de/">Visit yanwittmann.de for more of me!</a></span>
+    </div>
+    <div class="card-body">
+
+    <p class="section-title">Quick links</p>
+    <ul>
+        <li><a href="https://yanwittmann.de/">Visit my Homepage</a></li>
+        <li><a href="https://github.com/YanWittmann">My GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/yan-wittmann-b6a8562a9/">My LinkedIn</a></li>
+        <li><a href="https://youtube.com/c/@Skyball">My YouTube</a></li>
+        <li><a href="https://skyball.itch.io/">My itch.io</a></li>
+    </ul>
+
+    <p class="section-title">Hosted here</p>
+    <ul>
+        <li><a href="https://yanwittmann.github.io/rw-collection-index/">Rain World Collection Index</a></li>
+        <li><a href="https://yanwittmann.github.io/menter-lang-docs/">Menter Language Docs</a></li>
+    </ul>
+
+    <p class="section-title">Projects (selection)</p>
+    <ul>
+        <li><a href="https://yanwittmann.de/projects/launch-anything-bar">LaunchAnything: global search bar</a></li>
+        <li><a href="https://yanwittmann.de/projects/menter-lang">Menter: functional programming language</a></li>
+        <li><a href="https://yanwittmann.de/projects/latent-atlas">Latent Atlas: image similarity maps</a></li>
+        <li><a href="https://yanwittmann.de/projects/next-station-together">Next Station Together: board game web app</a></li>
+        <li><a href="https://yanwittmann.de/projects/rpg-engine">RPG Engine: text adventure engine</a></li>
+        <li><a href="https://yanwittmann.de/projects/rw-collection-index">Rain World Collection Index</a></li>
+        <li><a href="https://yanwittmann.de/projects/ow-nomai-mask">Nomai Mask Build</a></li>
+        <li><a href="https://yanwittmann.de/projects/rw-scavenger-mask">Scavenger Mask Build</a></li>
+        <li><a href="https://yanwittmann.de/projects/thma-bachelorarbeit">Bachelor's Thesis: Cyber Resilience Act</a></li>
+        <li><a href="https://yanwittmann.de/projects/thma-ree-ctf">Capture The Flag Challenge</a></li>
+        <li><a href="https://yanwittmann.de/projects/automatic-document-classification">Automatic Document Classification</a></li>
+        <li><a href="https://yanwittmann.de/projects">… and more at yanwittmann.de/projects</a></li>
+    </ul>
+
+    <p class="note">This page exists for search engine crawling.</p>
+
+    </div>
+</main>
 </body>
 </html>
